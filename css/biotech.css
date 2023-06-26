@@ -125,7 +125,6 @@ h1, h2, h3, h4, h5 {
     width: 100vw;
     height: 100vh;
     scroll-snap-align: start none;
-    background-color: black;
     position: relative;
 }
 
@@ -176,19 +175,25 @@ a:hover {
     -webkit-text-fill-color: transparent;
 }
 
-.logoText, .imageText, .gradientText {
+.logoText, .imageText, .imageLogo, .gradientText {
     font-family: 'Barlow', sans-serif;
     font-weight: bold;
-}
-
-.gradientText {
     justify-self: center;
-    background: linear-gradient(to right,white, rgb(0, 174, 255));
+    background: white;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     white-space: nowrap;
     overflow: hidden;
+}
+
+.gradientText {
+    justify-self: center;
+    background: linear-gradient(to right,white, rgb(0, 174, 255));
+}
+
+.delay {
+    transition-delay: 3s;
 }
 
 .help {
@@ -264,7 +269,7 @@ a:hover {
 }
 
 /* Hamburger Bars */
-.bar1, .bar2, .bar3 {
+/* .bar1, .bar2, .bar3 {
     width: 30px;
     height: 3px;
     background-color: white;
@@ -282,10 +287,10 @@ a:hover {
 
 .toggle .bar3 {
     transform: translate(0, -9px) rotate(45deg);
-}
+} */
 
 /* Toggled Menu */
-.menu {
+/* .menu {
     display: hidden;
     z-index: 3;
     position: absolute;
@@ -323,7 +328,7 @@ a:hover {
 
 .hidden {
     display: none;
-}
+} */
 
 /* .text {
     color: white;
@@ -467,6 +472,69 @@ a:hover {
         grid-column: 2 / 3;
         justify-self: center;
     }
+
+
+/*new stuff*/
+
+.dramaticHeader {
+    font-family: 'Barlow', sans-serif;
+    font-size: 300%;
+    font-weight: bold;
+
+    position: absolute;
+    max-width: 75%;
+    max-height: 75%;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    justify-self: center;
+    background: white;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 100%;
+    font-weight: normal;
+
+    position: absolute;
+    max-width: 75%;
+    max-height: 75%;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.video {
+    position: absolute;
+    min-width: 75vw;
+    min-height: 50vh;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*Animations*/
