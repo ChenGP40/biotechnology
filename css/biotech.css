@@ -179,16 +179,18 @@ a:hover {
 .logoText, .imageText, .imageLogo, .gradientText {
     font-family: 'Barlow', sans-serif;
     font-weight: bold;
-}
-
-.gradientText {
     justify-self: center;
-    background: linear-gradient(to right,white, rgb(0, 174, 255));
+    background: white;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     white-space: nowrap;
     overflow: hidden;
+}
+
+.gradientText {
+    justify-self: center;
+    background: linear-gradient(to right,white, rgb(0, 174, 255));
 }
 
 .delay {
