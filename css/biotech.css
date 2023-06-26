@@ -475,6 +475,58 @@ a:hover {
     }
 
 
+/*new stuff*/
+
+.dramaticHeader {
+    font-family: 'Barlow', sans-serif;
+    font-size: 300%;
+    font-weight: bold;
+    
+    position: absolute;
+    max-width: 75%;
+    max-height: 75%;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    justify-self: center;
+    background: white;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.description {
+    font-family: 'Poppins', sans-serif;
+    font-size: 100%;
+    font-weight: normal;
+}
+
+.video {
+    min-width: 75vw;
+    min-height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*Animations*/
 .reveal {
     position: absolute;
