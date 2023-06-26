@@ -481,11 +481,11 @@ a:hover {
     font-family: 'Barlow', sans-serif;
     font-size: 300%;
     font-weight: bold;
-    
+
     position: absolute;
     max-width: 75%;
     max-height: 75%;
-    top: 62%;
+    top: 0%;
     left: 50%;
     transform: translate(-50%, -50%);
 
