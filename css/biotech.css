@@ -485,7 +485,7 @@ a:hover {
     position: absolute;
     max-width: 75%;
     max-height: 75%;
-    top: 10%;
+    top: 5%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -512,8 +512,12 @@ a:hover {
 }
 
 .video {
+    position: absolute;
     min-width: 75vw;
-    min-height: auto;
+    min-height: 50vh;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
