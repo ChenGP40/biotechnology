@@ -484,7 +484,7 @@ a:hover {
     position: absolute;
     max-width: 75%;
     max-height: 75%;
-    top: 5%;
+    top: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -497,32 +497,102 @@ a:hover {
     overflow: hidden;
 }
 
+.minorHeader {
+
+}
+
 .description {
     font-family: 'Poppins', sans-serif;
-    font-size: 100%;
+    font-size: 125%;
     font-weight: normal;
+    text-align: justify;
+    text-align-last: center;
 
     position: absolute;
-    max-width: 75%;
-    max-height: 75%;
-    top: 80%;
+    min-width: 70vw;
+    max-height: 70%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 .video {
     position: absolute;
-    min-width: 75vw;
-    min-height: 50vh;
-    top: 15%;
+    min-width: 70vw;
+    min-height: 60vh;
+    top: 20%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -5%);
+}
+
+.cookbookDemo {
+    position: absolute;
+    min-width: 70vw;
+    min-height: 80vh;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+
+    background:
+        linear-gradient(to right, black 12px, transparent 10px) 0 0,
+        linear-gradient(to right, black 12px, transparent 10px) 0 100%,
+        linear-gradient(to left, black 12px, transparent 4px) 100% 0,
+        linear-gradient(to left, black 12px, transparent 4px) 100% 100%,
+        linear-gradient(to bottom, black 12px, transparent 4px) 0 0,
+        linear-gradient(to bottom, black 12px, transparent 4px) 100% 0,
+        linear-gradient(to top, black 12px, transparent 4px) 0 100%,
+        linear-gradient(to top, black 12px, transparent 4px) 100% 100%;
+
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+
+    background-color: #d3b58d;
+    border: #a08158 0.5em solid;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-decoration: none;
+}
+
+.cookbookHeader {
+    font-family: 'Poppins', sans-serif;
+    font-size: 225%;
+    font-weight: bold;
+    color: rgb(73, 40, 2);
+    align-items: center;
+   
+    grid-column: 1 / 4;
+    padding-top: 1em;
+}
+
+.cookbookDemo > div:nth-of-type(5) {
+    grid-column: 1 / 4;
+}
+
+.recipe {
+    position: relative;
 }
 
 
+.recipeImg {
+    width: 22vw;
+    height: 22vw;
+    justify-self: center;
+    background-color: black;
+    margin: 0.5em;
+    border:white 2px solid;
+    border-radius: 25px;
+}
+
+.recipeModal {
+
+}
 
 
-
+.box > div > button {
+    color: white;
+    font-family: 'Barlow', sans-serif;
+}
 
 
 
